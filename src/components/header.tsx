@@ -12,7 +12,7 @@ export default function Header(){
                            backdrop-blur supports-[backdrop-filter]:bg-background/60"> {/*给该元素底下的背景加模糊效果（backdrop-blur）,如果浏览器支持这个特性，再让背景半透明（bg-background/60） */}
             <div className="h-16 container mx-auto flex items-center justify-between px-4">
                 <Link to="/">
-                    <img src={theme==="dark"? "/logo.png":"/logo2.png"} alt="Klimate logo" className="h-14"/>
+                    <img src={`${import.meta.env.BASE_URL}${theme==="dark"? "/logo.png":"/logo2.png"}`} alt="Klimate logo" className="h-14"/>
                 </Link>
 
                 <div className="flex gap-4">

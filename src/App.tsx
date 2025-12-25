@@ -24,7 +24,7 @@ function App() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
+      <BrowserRouter  basename="/Weather-APP/">
         <ThemeProvider defaultTheme='dark'>
             <Layout>
               <Routes>
@@ -40,4 +40,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
